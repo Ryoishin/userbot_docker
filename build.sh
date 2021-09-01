@@ -14,8 +14,8 @@ function sendTG() {
 
 sendTG "\`Docker image is being updated!\`"
 
-docker build . -t zakaryan2004/userbot_docker:latest
+docker build . -t ryoishin/userbot_docker:latest
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-docker push zakaryan2004/userbot_docker
+docker push ryoishin/userbot_docker
 
-sendTG "\`I have pushed new images to docker\` %0A [Images are Here](https://hub.docker.com/r/zakaryan2004/userbot_docker)"
+sendTG "\`I have pushed new images to docker\` %0A [Images are Here](https://hub.docker.com/r/ryoishin/userbot_docker)"
