@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . ./Dockerfile ryoishin/userbot:ryoishin alpine:$(date +%s)
+      run: docker build . https://github.com/Ryoishin/userbot_docker/blob/master/Dockerfile ryoishin/userbot:ryoishin alpine:$(date +%s)
